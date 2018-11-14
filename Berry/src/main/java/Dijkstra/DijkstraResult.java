@@ -4,16 +4,18 @@ package Dijkstra;
  * Represents a row from the results table of running Dijkstra's shortest path algorithm.
  */
 public class DijkstraResult {
-    private String key;
+    private Node node;
     private int distance;
-    private String fromNodeKey;
+    private Node fromNode;
 
-    public DijkstraResult(String key){
-        this.key = key;
+    public DijkstraResult(Node node){
+        this.node = node;
+        this.distance = Integer.MAX_VALUE;
+        this.fromNode = null;
     }
 
-    public String getKey() {
-        return key;
+    public Node getNode() {
+        return node;
     }
 
     public int getDistance() {
@@ -24,11 +26,11 @@ public class DijkstraResult {
         this.distance = distance;
     }
 
-    public String getFromNodeKey() {
-        return fromNodeKey;
+    public Node getFromNode() {
+        return fromNode;
     }
 
-    public void setFromNodeKey(String fromNodeKey) {
-        this.fromNodeKey = fromNodeKey;
+    public void setFromNode(Node fromNode) {
+        this.fromNode = fromNode;
     }
 }

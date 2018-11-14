@@ -16,12 +16,13 @@ public class DijkstraShortestPath {
         }
         path.add(source.getKey());
 
+        // Reverse the path so that
+        Collections.reverse(path);
+
         return path.toString();
     }
 
-    public HashMap<String, DistanceToNode> populateMap(Node weighedGraph){
-
-        // Get the list of unique node values
+    private HashMap<String, DistanceToNode> populateMap(Node weighedGraph){
         Set<String> keys = new HashSet<>();
         populateKeys(weighedGraph, keys);
 
@@ -35,18 +36,7 @@ public class DijkstraShortestPath {
 
         Set<String> visitedNodes = new HashSet<>();
         Set<String> unvisitedNodes = new HashSet<>(keys);
-//        Map<Integer, String> priorityQueue
-        PriorityQueue<DijkstraResult> priorityQueue = new PriorityQueue<>(Comparator.comparing(x -> x.getDistance()));
-        for(String key : keys){
-            result.put(key, new DistanceToNode(null, Integer.MAX_VALUE));
-        }
-
-        while(!unvisitedNodes.isEmpty()){
-
-        }
-
-
-//        populateMap(weighedGraph, result, visitedNodes, unvisitedNodes);
+        populateMap(weighedGraph, result, visitedNodes, unvisitedNodes);
 
         return result;
     }
@@ -100,6 +90,89 @@ public class DijkstraShortestPath {
 
         // add the node's key to the set of keys
         keys.add(node.getKey());
+
+        // Get the keys of the neighboring nodes
+        for(Node neighbor : node.getNeighbors()){
+            populateKeys(neighbor, keys);
+        }
+    }
+
+    public String findShortestPathWithPriorityQueue(Node source, Node destination){
+        HashMap<String, DijkstraResult> map = populateMapWithPriorityQueue(source, destination.getKey());
+
+        List<String> path = new ArrayList<>();
+        path.add(destination.getKey());
+        DijkstraResult previousNode = map.get(destination.getKey());
+        while(previousNode.getFromNode() != null && !source.getKey().equals(previousNode.getFromNode().getKey())){
+            path.add(previousNode.getFromNode().getKey());
+            previousNode = map.get(previousNode.getFromNode().getKey());
+        }
+        path.add(source.getKey());
+
+        // Reverse the path so that
+        Collections.reverse(path);
+
+        return path.toString();
+    }
+
+    private HashMap<String, DijkstraResult> populateMapWithPriorityQueue(Node weighedGraph, String destinationKey){
+        Map<String, Node> flatGraph = new HashMap<>();
+        populateKeys(weighedGraph, flatGraph);
+
+        HashMap<String, DijkstraResult> result = new HashMap<>();
+        Set<String> visitedNodes = new HashSet<>();
+        Set<String> unvisitedNodes = new HashSet<>(flatGraph.keySet());
+        PriorityQueue<DijkstraResult> priorityQueue = new PriorityQueue<>(Comparator.comparingInt(x -> x.getDistance()));
+        for(String key : flatGraph.keySet()){
+            DijkstraResult resultRow = new DijkstraResult(flatGraph.get(key));
+            if(key.equals(weighedGraph.getKey())){
+                resultRow.setDistance(0);
+            }
+            priorityQueue.add(resultRow);
+            result.put(key, resultRow);
+        }
+
+        DijkstraResult resultRow = priorityQueue.poll();
+        while(!unvisitedNodes.isEmpty() && !destinationKey.equals(resultRow.getNode().getKey())){
+            Node node = resultRow.getNode();
+            String key = node.getKey();
+
+            int distanceToNode = resultRow.getDistance();
+            for(int i = 0; i < node.getNeighbors().size(); i++){
+                Node neighbor = node.getNeighbors().get(i);
+                DijkstraResult neighborResultRow = result.get(neighbor.getKey());
+                int currDistanceToNeighbor = neighborResultRow.getDistance();
+                int propDistanceToNeighbor = distanceToNode + node.getDistanceToNeighbors().get(i);
+
+                if(propDistanceToNeighbor < currDistanceToNeighbor){
+                    neighborResultRow.setDistance(propDistanceToNeighbor);
+                    neighborResultRow.setFromNode(node);
+                    priorityQueue.remove(neighborResultRow);
+                    priorityQueue.offer(neighborResultRow);
+                }
+            }
+
+            visitedNodes.add(key);
+            unvisitedNodes.remove(key);
+            resultRow = priorityQueue.poll();
+        }
+
+        return result;
+    }
+
+    private void populateKeys(Node node, Map<String, Node> keys){
+        if(node == null){
+            // Nothing to do here.
+            return;
+        }
+
+        if(keys.keySet().contains(node.getKey())){
+            // If we have already been to this node skip it.
+            return;
+        }
+
+        // add the node's key to the set of keys
+        keys.put(node.getKey(), node);
 
         // Get the keys of the neighboring nodes
         for(Node neighbor : node.getNeighbors()){

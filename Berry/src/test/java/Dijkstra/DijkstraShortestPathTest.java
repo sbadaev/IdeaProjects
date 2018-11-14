@@ -1,5 +1,6 @@
 package Dijkstra;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -7,7 +8,7 @@ import java.util.HashMap;
 public class DijkstraShortestPathTest {
 
     @Test
-    public void testPopulateMap() throws Exception {
+    public void testFindPathWithPriorityQueue() throws Exception {
         Node nodeA = new Node("A");
         Node nodeB = new Node("B");
         Node nodeC = new Node("C");
@@ -26,7 +27,9 @@ public class DijkstraShortestPathTest {
         nodeD.addNeighbor(nodeE, 1);
 
         DijkstraShortestPath shortestPath = new DijkstraShortestPath();
-        HashMap<String, DistanceToNode> map = shortestPath.populateMap(nodeA);
+        String path = shortestPath.findShortestPathWithPriorityQueue(nodeA, nodeC);
+
+        Assert.assertEquals("Expected path", "[A, D, E, C]", path);
     }
 
     @Test
@@ -50,6 +53,8 @@ public class DijkstraShortestPathTest {
 
         DijkstraShortestPath shortestPath = new DijkstraShortestPath();
         String path = shortestPath.findShortestPath(nodeA, nodeC);
+
+        Assert.assertEquals("Expected path", "[A, D, E, C]", path);
     }
 
 }
