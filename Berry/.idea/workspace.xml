@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="142e792b-d792-4473-b6d2-88e6752a3905" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SortingAlgorithms/MergeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraShortestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraShortestPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dijkstra/Path.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Dijkstra/DijkstraShortestPathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Dijkstra/DijkstraShortestPathTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dijkstra/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dijkstra/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dijkstra/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dijkstra/Path.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dijkstra/Path.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Dijkstra/DijkstraShortestPathTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Dijkstra/DijkstraShortestPathTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,54 +64,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="914" />
+          <entry key="java" value="917" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="914" />
+          <entry key="JAVA" value="917" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraShortestPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="144" column="66" selection-start-line="144" selection-start-column="66" selection-end-line="144" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding>
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/Path.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="235">
+              <caret line="141" column="59" lean-forward="true" selection-start-line="141" selection-start-column="59" selection-end-line="141" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -119,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Dijkstra/DijkstraShortestPathTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+            <state relative-caret-position="-245">
+              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,11 +145,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloControllerIT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SortingAlgorithms/MergeSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -235,8 +223,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Dijkstra/DijstraShortestPath.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dijkstra/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraResult.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Dijkstra/DijkstraShortestPathTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraShortestPath.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Dijkstra/DijkstraShortestPathTest.java" />
       </list>
     </option>
   </component>
@@ -281,22 +269,6 @@
               <item name="Berry" type="b2602c69:ProjectViewProjectNode" />
               <item name="Berry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Dijkstra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Berry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Berry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Berry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Berry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -305,22 +277,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Berry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Berry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Dijkstra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Berry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Berry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,7 +286,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542169311709" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542170103678" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -464,18 +420,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DijkstraShortestPathTest_testFindPathWithPriorityQueue - 2018.11.13 at 23h 09m 42s.xml">
-      <configuration name="DijkstraShortestPathTest.testFindPathWithPriorityQueue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DijkstraShortestPathTest_testFindPathWithPriorityQueue - 2018.11.13 at 23h 10m 45s.xml">
-      <configuration name="DijkstraShortestPathTest.testFindPathWithPriorityQueue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DijkstraShortestPathTest_testFindPathWithPriorityQueue - 2018.11.13 at 23h 10m 55s.xml">
-      <configuration name="DijkstraShortestPathTest.testFindPathWithPriorityQueue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DijkstraShortestPathTest_testFindPathWithPriorityQueue - 2018.11.13 at 23h 12m 08s.xml">
-      <configuration name="DijkstraShortestPathTest.testFindPathWithPriorityQueue" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DijkstraShortestPathTest_testFindPathWithPriorityQueue - 2018.11.13 at 23h 12m 24s.xml">
       <configuration name="DijkstraShortestPathTest.testFindPathWithPriorityQueue" configurationId="JUnit" />
     </history-entry>
@@ -494,12 +438,24 @@
     <history-entry file="DijkstraShortestPathTest_testFindPathWithPriorityQueue - 2018.11.13 at 23h 21m 14s.xml">
       <configuration name="DijkstraShortestPathTest.testFindPathWithPriorityQueue" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DijkstraShortestPathTest_testFindPathWithPriorityQueue - 2018.11.13 at 23h 21m 53s.xml">
+      <configuration name="DijkstraShortestPathTest.testFindPathWithPriorityQueue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DijkstraShortestPathTest_testFindPath - 2018.11.13 at 23h 32m 58s.xml">
+      <configuration name="DijkstraShortestPathTest.testFindPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DijkstraShortestPathTest_testFindPath - 2018.11.13 at 23h 33m 25s.xml">
+      <configuration name="DijkstraShortestPathTest.testFindPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DijkstraShortestPathTest_testFindPathWithPriorityQueue - 2018.11.13 at 23h 33m 36s.xml">
+      <configuration name="DijkstraShortestPathTest.testFindPathWithPriorityQueue" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -509,7 +465,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31215772" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32852387" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32852387" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39511654" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -570,30 +526,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DjikstrasShortestPath.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/Path.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloControllerIT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -624,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/DistanceToNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -640,6 +569,30 @@
             <element signature="e#416#417#0" expanded="true" />
             <element signature="e#448#449#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraShortestPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="141" column="59" lean-forward="true" selection-start-line="141" selection-start-column="59" selection-end-line="141" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/DistanceToNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -662,18 +615,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Dijkstra/DijkstraShortestPathTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        <state relative-caret-position="-245">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraShortestPath.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="144" column="66" selection-start-line="144" selection-start-column="66" selection-end-line="144" selection-end-column="66" />
+        <state relative-caret-position="17">
+          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloControllerIT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SortingAlgorithms/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -30,6 +30,10 @@ public class DijkstraShortestPathTest {
         String path = shortestPath.findShortestPathWithPriorityQueue(nodeA, nodeC);
 
         Assert.assertEquals("Expected path", "[A, D, E, C]", path);
+        path = shortestPath.findShortestPath(nodeA, nodeE);
+        Assert.assertEquals("Expected path", "[A, D, E]", path);
+        path = shortestPath.findShortestPath(nodeA, nodeB);
+        Assert.assertEquals("Expected path", "[A, D, B]", path);
     }
 
     @Test
@@ -53,8 +57,11 @@ public class DijkstraShortestPathTest {
 
         DijkstraShortestPath shortestPath = new DijkstraShortestPath();
         String path = shortestPath.findShortestPath(nodeA, nodeC);
-
         Assert.assertEquals("Expected path", "[A, D, E, C]", path);
+        path = shortestPath.findShortestPath(nodeA, nodeE);
+        Assert.assertEquals("Expected path", "[A, D, E]", path);
+        path = shortestPath.findShortestPath(nodeA, nodeB);
+        Assert.assertEquals("Expected path", "[A, D, B]", path);
     }
 
 }
