@@ -3,7 +3,6 @@ package SortingAlgorithms;
 import java.util.Objects;
 
 public class MaxHeap<T> {
-
     private T value;
     private MaxHeap<T> parent;
     private MaxHeap<T> left;

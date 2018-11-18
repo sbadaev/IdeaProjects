@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="142e792b-d792-4473-b6d2-88e6752a3905" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SortingAlgorithms/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SortingAlgorithms/MaxHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SortingAlgorithms/HeapSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SortingAlgorithms/MergeSortTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dijkstra/DijstraShortestPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Dijkstra/DijstraShortestPathTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SortingAlgorithms/MaxHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortingAlgorithms/MaxHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SortingAlgorithms/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortingAlgorithms/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SortingAlgorithms/MaxHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortingAlgorithms/MaxHeap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SortingAlgorithms/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortingAlgorithms/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SortingAlgorithms/HeapSortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SortingAlgorithms/HeapSortTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,26 +32,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="26" />
+          <entry key="class" value="2" />
+          <entry key="java" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="26" />
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="7562" />
+          <entry key="java" value="8401" />
           <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7562" />
+          <entry key="JAVA" value="8401" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="7" />
         </counts>
@@ -92,17 +93,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SortingAlgorithms/HeapSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="378">
+              <caret line="44" column="22" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SortingAlgorithms/HeapSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+            <state relative-caret-position="51">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SortingAlgorithms/MaxHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="153">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
                 <element signature="e#511#512#0" expanded="true" />
                 <element signature="e#539#540#0" expanded="true" />
@@ -130,6 +131,45 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
               <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SortingAlgorithms/MergeSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="4097" column="24" selection-start-line="4097" selection-start-column="24" selection-end-line="4097" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SortingAlgorithms/MergeSortTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/ComparisonCriteria.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -168,9 +208,12 @@
         <option value="$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dijkstra/DijkstraShortestPath.java" />
         <option value="$PROJECT_DIR$/src/test/java/Dijkstra/DijkstraShortestPathTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SortingAlgorithms/MaxHeap.java" />
         <option value="$PROJECT_DIR$/src/main/java/SortingAlgorithms/HeapSort.java" />
         <option value="$PROJECT_DIR$/src/test/java/SortingAlgorithms/HeapSortTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SortingAlgorithms/MaxHeap.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SortingAlgorithms/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SortingAlgorithms/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SortingAlgorithms/MergeSortTest.java" />
       </list>
     </option>
   </component>
@@ -239,14 +282,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Dijkstra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Berry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Berry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SortingAlgorithms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -256,7 +291,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542562669293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542565050569" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -279,7 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HeapSortTest">
+  <component name="RunManager" selected="JUnit.MergeSortTest">
     <configuration name="HeapSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Berry" />
       <extension name="coverage">
@@ -291,38 +326,6 @@
       <option name="PACKAGE_NAME" value="SortingAlgorithms" />
       <option name="MAIN_CLASS_NAME" value="SortingAlgorithms.HeapSortTest" />
       <option name="METHOD_NAME" value="buildMaxHeapTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeapSortTest.MaxHeapifyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Berry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SortingAlgorithms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SortingAlgorithms" />
-      <option name="MAIN_CLASS_NAME" value="SortingAlgorithms.HeapSortTest" />
-      <option name="METHOD_NAME" value="MaxHeapifyTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeapSortTest.buildMaxHeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Berry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SortingAlgorithms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SortingAlgorithms" />
-      <option name="MAIN_CLASS_NAME" value="SortingAlgorithms.HeapSortTest" />
-      <option name="METHOD_NAME" value="buildMaxHeapTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -343,7 +346,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeapSortTest.sortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MergeSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Berry" />
       <extension name="coverage">
         <pattern>
@@ -352,7 +355,37 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SortingAlgorithms" />
-      <option name="MAIN_CLASS_NAME" value="SortingAlgorithms.HeapSortTest" />
+      <option name="MAIN_CLASS_NAME" value="SortingAlgorithms.MergeSortTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeSortTest.sortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Berry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SortingAlgorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SortingAlgorithms" />
+      <option name="MAIN_CLASS_NAME" value="SortingAlgorithms.MergeSortTest" />
+      <option name="METHOD_NAME" value="sortTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeSort.sortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Berry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SortingAlgorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SortingAlgorithms" />
+      <option name="MAIN_CLASS_NAME" value="SortingAlgorithms.MergeSort" />
       <option name="METHOD_NAME" value="sortTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -360,19 +393,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HeapSortTest.MaxHeapifyTest" />
-      <item itemvalue="JUnit.HeapSortTest.buildMaxHeapTest" />
       <item itemvalue="JUnit.HeapSortTest" />
-      <item itemvalue="JUnit.HeapSortTest.sortTest" />
       <item itemvalue="JUnit.HeapSortTest.sort2Test" />
+      <item itemvalue="JUnit.MergeSort.sortTest" />
+      <item itemvalue="JUnit.MergeSortTest" />
+      <item itemvalue="JUnit.MergeSortTest.sortTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MergeSortTest" />
+        <item itemvalue="JUnit.MergeSortTest.sortTest" />
+        <item itemvalue="JUnit.MergeSort.sortTest" />
         <item itemvalue="JUnit.HeapSortTest" />
         <item itemvalue="JUnit.HeapSortTest.sort2Test" />
-        <item itemvalue="JUnit.HeapSortTest.sortTest" />
-        <item itemvalue="JUnit.HeapSortTest.buildMaxHeapTest" />
-        <item itemvalue="JUnit.HeapSortTest.MaxHeapifyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -390,35 +423,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HeapSortTest - 2018.11.18 at 12h 00m 08s.xml">
-      <configuration name="HeapSortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 11m 14s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HeapSortTest - 2018.11.18 at 12h 01m 50s.xml">
-      <configuration name="HeapSortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 11m 40s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HeapSortTest_sortTest - 2018.11.18 at 12h 24m 53s.xml">
-      <configuration name="HeapSortTest.sortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 13m 13s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HeapSortTest_sortTest - 2018.11.18 at 12h 26m 46s.xml">
-      <configuration name="HeapSortTest.sortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 13m 20s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HeapSortTest_sortTest - 2018.11.18 at 12h 28m 28s.xml">
-      <configuration name="HeapSortTest.sortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 13m 54s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HeapSortTest_sortTest - 2018.11.18 at 12h 28m 43s.xml">
-      <configuration name="HeapSortTest.sortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 14m 02s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HeapSortTest_sortTest - 2018.11.18 at 12h 29m 49s.xml">
-      <configuration name="HeapSortTest.sortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 14m 50s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HeapSortTest_sortTest - 2018.11.18 at 12h 30m 27s.xml">
-      <configuration name="HeapSortTest.sortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 16m 20s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HeapSortTest_sortTest - 2018.11.18 at 12h 30m 56s.xml">
-      <configuration name="HeapSortTest.sortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 16m 28s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HeapSortTest_sortTest - 2018.11.18 at 12h 32m 24s.xml">
-      <configuration name="HeapSortTest.sortTest" configurationId="JUnit" />
+    <history-entry file="MergeSortTest_sortTest - 2018.11.18 at 13h 16m 32s.xml">
+      <configuration name="MergeSortTest.sortTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -435,15 +468,15 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31215772" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49253732" visible="true" weight="0.3275488" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49253732" weight="0.39479393" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48880598" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48933902" weight="0.39479393" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5074627" side_tool="true" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51119405" side_tool="true" visible="true" weight="0.3275488" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -579,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SortingAlgorithms/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Dijkstra/DijkstraShortestPathTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -644,8 +670,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SortingAlgorithms/MaxHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="153">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="e#511#512#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
@@ -657,15 +683,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SortingAlgorithms/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="378">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SortingAlgorithms/HeapSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        <state relative-caret-position="51">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/ComparisonCriteria.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="4097" column="24" selection-start-line="4097" selection-start-column="24" selection-end-line="4097" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SortingAlgorithms/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SortingAlgorithms/MergeSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
