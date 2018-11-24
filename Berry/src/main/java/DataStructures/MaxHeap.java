@@ -1,4 +1,4 @@
-package SortingAlgorithms;
+package DataStructures;
 
 import java.util.Objects;
 

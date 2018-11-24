@@ -1,5 +1,8 @@
 package SortingAlgorithms;
 
+import DataStructures.InlineHeap;
+import DataStructures.MaxHeap;
+
 import java.util.Arrays;
 
 public class HeapSort {
@@ -43,6 +46,39 @@ public class HeapSort {
 
             // Max Heapify the heap so that the max value is at the top of the heap
             maxHeapify(max);
+        }
+
+        return output;
+    }
+
+    public <T extends Comparable> T[] sortInline(final T[] input){
+        if(input == null || input.length <= 1){
+            return input;
+        }
+
+        InlineHeap<T> inlineHeap = new InlineHeap<>(input);
+        T[] maxHeap = inlineHeap.getHeap();
+
+        // Counter to track the last node in the heap
+        // The important thing about the last node is that it is
+        // a leaf node, it's actual value doesn't matter as long as it
+        // is less than the value of its parent.
+        T[] output = Arrays.copyOf(input, input.length);
+
+        // Build out the output in descending order
+        for(int i = 0; i < input.length; i++){
+            T value = maxHeap[0];
+            output[i] = value;
+
+            // Move the value of a leaf node to the top of the Heap
+            // so that we can remove the leaf node from the heap
+            // and Max Heapify the heap.
+            T last = maxHeap[inlineHeap.getHeapSize() - 1];
+            maxHeap[0] = last;
+            inlineHeap.setHeapSize(inlineHeap.getHeapSize() - 1);
+
+            // Max Heapify the heap so that the max value is at the top of the heap
+            inlineHeap.maxHeapify(0);
         }
 
         return output;

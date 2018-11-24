@@ -1,5 +1,6 @@
 package SortingAlgorithms;
 
+import DataStructures.MaxHeap;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -23,6 +24,28 @@ public class HeapSortTest {
 
         HeapSort heapSort = new HeapSort();
         Integer[] output = heapSort.sort(unorderedArray);
+
+        Assert.assertArrayEquals(orderedArray, output);
+    }
+
+    @Test
+    public void sortInlineTest(){
+        Integer[] unorderedArray = new Integer[] {10, 4, 6, 1, 5, 3, 7};
+        Integer[] orderedArray = new Integer[] {10, 7, 6, 5, 4, 3, 1};
+
+        HeapSort heapSort = new HeapSort();
+        Integer[] output = heapSort.sortInline(unorderedArray);
+
+        Assert.assertArrayEquals(orderedArray, output);
+    }
+
+    @Test
+    public void sortInline2Test(){
+        Integer[] unorderedArray = new Integer[] {10, 4, 6, 1, 3, 7};
+        Integer[] orderedArray = new Integer[] {10, 7, 6, 4, 3, 1};
+
+        HeapSort heapSort = new HeapSort();
+        Integer[] output = heapSort.sortInline(unorderedArray);
 
         Assert.assertArrayEquals(orderedArray, output);
     }
