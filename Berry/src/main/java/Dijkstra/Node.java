@@ -8,9 +8,17 @@ public class Node {
     private String key;
     private List<Node> neighbors = new ArrayList<>();
     private List<Integer> distanceToNeighbors = new ArrayList<>();
+    private double x;
+    private double y;
 
     public Node(String key){
+        this(key, 0d, 0d);
+    }
+
+    public Node(String key, double x, double y){
         this.key = key;
+        this.x = x;
+        this.y = y;
     }
 
     public String getKey() {
@@ -34,6 +42,10 @@ public class Node {
         distanceToNeighbors.add(distanceToNeighbor);
 
         neighbor.addNeighbor(this, distanceToNeighbor);
+    }
+
+    public double getDistanceToNode(Node node){
+        return Math.sqrt(Math.pow(node.x - x, 2) + Math.pow(node.y - y, 2));
     }
 
     @Override

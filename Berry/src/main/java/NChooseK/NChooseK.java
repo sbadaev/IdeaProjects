@@ -35,31 +35,29 @@ public class NChooseK {
 
     public List<String> genCombos(String array, int k){
         List<String> result = new ArrayList<>();
-        combinationUtil(array, k, 0, new char[k], 0, result);
+        combinationUtil(array.toCharArray(), 0,  k, new char[k], 0, result);
         return result;
     }
 
-    private void combinationUtil(String array, int k, int index,
-                                 char[] data, int i, List<String> result)
+    private void combinationUtil(char[] array, int arrayIndex, int k, char[] data, int dataIndex, List<String> result)
     {
-        // Current combination is ready to be printed, print it
-        if (index == k)
+        // Found k elements, add them to the list
+        if (dataIndex == k)
         {
             result.add(new String(data));
             return;
         }
 
         // Reached the end of the array.
-        if (i >= array.length()){
+        if (arrayIndex >= array.length){
             return;
         }
 
         // current is included, put next at next location
-        data[index] = array.charAt(i);
-        combinationUtil(array, k, index + 1, data, i + 1, result);
+        data[dataIndex] = array[arrayIndex];
+        combinationUtil(array, arrayIndex + 1, k, data, dataIndex + 1, result);
 
-        // current is excluded, replace it with next (Note that
-        // i+1 is passed, but index is not changed)
-        combinationUtil(array, k, index, data, i + 1, result);
+        // current is excluded, replace it with next (Note that arrayIndex+1 is passed, but index is not changed)
+        combinationUtil(array, arrayIndex + 1, k, data, dataIndex, result);
     }
 }

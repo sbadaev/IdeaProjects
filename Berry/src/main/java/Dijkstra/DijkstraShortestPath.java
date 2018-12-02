@@ -97,6 +97,8 @@ public class DijkstraShortestPath {
         }
     }
 
+
+
     public String findShortestPathWithPriorityQueue(Node source, Node destination){
         HashMap<String, DijkstraResult> map = populateMapWithPriorityQueue(source, destination.getKey());
 
@@ -109,12 +111,22 @@ public class DijkstraShortestPath {
         }
         path.add(source.getKey());
 
-        // Reverse the path so that
+        // Reverse the path so that it starts from the beginning.
         Collections.reverse(path);
 
         return path.toString();
     }
 
+    /**
+     *
+     *
+     * @param weighedGraph
+     *          A graph which represents the connections between the nodes and the cost of traveling
+     *          between the nodes.
+     * @param destinationKey
+     *          Key of the destination node.
+     * @return
+     */
     private HashMap<String, DijkstraResult> populateMapWithPriorityQueue(Node weighedGraph, String destinationKey){
         Map<String, Node> flatGraph = new HashMap<>();
         populateKeys(weighedGraph, flatGraph);
@@ -122,11 +134,14 @@ public class DijkstraShortestPath {
         HashMap<String, DijkstraResult> result = new HashMap<>();
         Set<String> visitedNodes = new HashSet<>();
         Set<String> unvisitedNodes = new HashSet<>(flatGraph.keySet());
-        PriorityQueue<DijkstraResult> priorityQueue = new PriorityQueue<>(Comparator.comparingInt(x -> x.getDistance()));
+        PriorityQueue<DijkstraResult> priorityQueue = new PriorityQueue<>(Comparator.comparingDouble(x -> x.getWeight()));
+        Node destinationNode = flatGraph.get(destinationKey);
         for(String key : flatGraph.keySet()){
-            DijkstraResult resultRow = new DijkstraResult(flatGraph.get(key));
+            Node node = flatGraph.get(key);
+            DijkstraResult resultRow = new DijkstraResult(node);
+            resultRow.setDistanceToEnd(node.getDistanceToNode(destinationNode));
             if(key.equals(weighedGraph.getKey())){
-                resultRow.setDistance(0);
+                resultRow.setDistanceFromPrevious(0);
             }
             priorityQueue.add(resultRow);
             result.put(key, resultRow);
@@ -137,18 +152,17 @@ public class DijkstraShortestPath {
             Node node = resultRow.getNode();
             String key = node.getKey();
 
-            int distanceToNode = resultRow.getDistance();
+            int distanceToNode = resultRow.getDistanceFromPrevious();
             for(int i = 0; i < node.getNeighbors().size(); i++){
                 Node neighbor = node.getNeighbors().get(i);
                 DijkstraResult neighborResultRow = result.get(neighbor.getKey());
-                int currDistanceToNeighbor = neighborResultRow.getDistance();
-                int propDistanceToNeighbor = distanceToNode + node.getDistanceToNeighbors().get(i);
-
+                double currDistanceToNeighbor = neighborResultRow.getWeight();
+                double propDistanceToNeighbor = distanceToNode + node.getDistanceToNeighbors().get(i) + node.getDistanceToNode(destinationNode);
                 if(propDistanceToNeighbor < currDistanceToNeighbor){
-                    neighborResultRow.setDistance(propDistanceToNeighbor);
+                    neighborResultRow.setDistanceFromPrevious(distanceToNode + node.getDistanceToNeighbors().get(i));
                     neighborResultRow.setFromNode(node);
                     priorityQueue.remove(neighborResultRow);
-                    priorityQueue.offer(neighborResultRow);
+                    priorityQueue.add(neighborResultRow);
                 }
             }
 
