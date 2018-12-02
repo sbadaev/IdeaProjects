@@ -27,7 +27,6 @@ import java.util.Arrays;
  *            5   4   3   1
  */
 public class InlineHeap <T extends Comparable> {
-
     private T[] heap;
     private boolean isMaxHeap;
     private int heapSize;
@@ -43,12 +42,20 @@ public class InlineHeap <T extends Comparable> {
         buildHeap(inputArray);
     }
 
+    /**
+     * Adjusts the passed in heap so that it becomes a max heap.
+     * A max heap is one where the value of the heap is greater than the
+     * values of the left and right heaps it contains.
+     *
+     * @param index
+     *          Index where maxHeapify should start. Left or right values can be
+     *          null but they must be max heaps.
+     */
     public void maxHeapify(int index){
         if(heap == null || index >= heapSize){
             return;
         }
 
-        T value = heap[index];
         int leftIndex = index * 2 + 1;
         int rightIndex = index * 2 + 2;
 
@@ -58,29 +65,33 @@ public class InlineHeap <T extends Comparable> {
         if(hasLeft && hasRight){
             T leftValue = heap[leftIndex];
             T rightValue = heap[rightIndex];
-            if(leftValue.compareTo(rightValue) > 0 && leftValue.compareTo(value) > 0){
-                heap[leftIndex] = value;
-                heap[index] = leftValue;
-                maxHeapify(leftIndex);
-            } else if(rightValue.compareTo(value) > 0){
-                heap[rightIndex] = value;
-                heap[index] = rightValue;
-                maxHeapify(rightIndex);
+            int comparisonResult = leftValue.compareTo(rightValue);
+            boolean isLeftFirst = isMaxHeap ? comparisonResult > 0 : comparisonResult < 0;
+            if(isLeftFirst){
+                swap(index, leftIndex);
+            } else {
+                swap(index, rightIndex);
             }
         } else if(hasLeft){
-            T leftValue = heap[leftIndex];
-            if(leftValue.compareTo(value) > 0){
-                heap[leftIndex] = value;
-                heap[index] = leftValue;
-                maxHeapify(leftIndex);
-            }
+            swap(index, leftIndex);
         } else if(hasRight){
-            T rightValue = heap[rightIndex];
-            if(rightValue.compareTo(value) > 0){
-                heap[rightIndex] = value;
-                heap[index] = rightValue;
-                maxHeapify(rightIndex);
-            }
+            swap(index, rightIndex);
+        }
+    }
+
+    /**
+     * Swaps the value at the newIndex with the value at the currentIndex if the
+     * values should be swapped.
+     */
+    private void swap(int currentIndex, int newIndex){
+        T value = heap[currentIndex];
+        T newValue = heap[newIndex];
+        int comparisonResult = newValue.compareTo(value);
+        boolean isNewBeforeCurrent = isMaxHeap ? comparisonResult > 0 : comparisonResult < 0;
+        if(isNewBeforeCurrent){
+            heap[newIndex] = value;
+            heap[currentIndex] = newValue;
+            maxHeapify(newIndex);
         }
     }
 
@@ -96,7 +107,12 @@ public class InlineHeap <T extends Comparable> {
         this.heapSize = heapSize;
     }
 
-
+    /**
+     * Builds out the initial heap from an unsorted array.
+     *
+     * @param inputArray
+     *          Unsorted array which needs to be converted into a heap.
+     */
     private void buildHeap(T[] inputArray){
         for(int i = (int)Math.floor(inputArray.length / 2) - 1; i >= 0; i--){
             int leftIndex = (i * 2) + 1;
